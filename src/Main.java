@@ -73,7 +73,6 @@ public class Main {
         { if(arr[b] %2!=0) {
             arr[b]= arr[b]+ 1;
         }
-
             System.out.print(arr[b] + " , ");
         }
 
