@@ -11,7 +11,7 @@ public class Main {
         arr[0] = 1;
         arr[1] = 2;
         arr[2] = 3;
-        double[] doubleArr = {1.57, 7.654, 9.986};
+
 
 
         int[] arr2 = new int[3];
@@ -32,9 +32,9 @@ public class Main {
         System.out.print(arr[0] + ", ");
         System.out.print(arr[1]+ ", ");
         System.out.println(arr[2]);
-        System.out.print(doubleArr[0]+ ", ");
-        System.out.print(doubleArr[1]+ ", ");
-        System.out.println(doubleArr[2]);
+        System.out.print(doubleArr2[0]+ ", ");
+        System.out.print(doubleArr2[1]+ ", ");
+        System.out.println(doubleArr2[2]);
 
         System.out.print(arr2[0] + ", ");
         System.out.print(arr2[1] + ", ");
@@ -57,8 +57,8 @@ public class Main {
 
         }
         System.out.println();
-        for (int a = doubleArr.length - 1; a >= 0; a--) {
-            System.out.print(doubleArr[a]);
+        for (int a = doubleArr2.length - 1; a >= 0; a--) {
+            System.out.print(doubleArr2[a]);
             if (a > 0) {
                 System.out.print(", ");
 
@@ -67,9 +67,11 @@ public class Main {
         }
         System.out.println();
         System.out.println(" Упражнение 4");
-        for( int b =arr.length-1;b>0;b--)
-        { if(arr[b]%2!=0) {
-            arr[b] += 1;
+
+
+        for(int b= 0; b < arr.length; b++)
+        { if(arr[b] %2!=0) {
+            arr[b]= arr[b]+ 1;
         }
 
             System.out.print(arr[b] + " , ");
